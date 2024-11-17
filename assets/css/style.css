@@ -9,6 +9,12 @@ body {
     line-height: 185%;
 }
 
+main {
+    width: 40%; 
+    margin: auto;
+    background-color: #D7E5E3;
+}
+
 button {
     font-family: 'Poppins', sans-serif ;
     font-size: 18px;
@@ -20,6 +26,38 @@ button {
 .logo {
     font-size: 24px;
 }
+
+menu li {
+
+    list-style:none;
+}
+
+#desktop-nav menu {
+    display: flex;
+    gap: 40px;
+
+}
+
+
+#desktop-nav menu a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#mobile-nav {
+    display: none;
+}
+
+@media (max-width: 900px) {
+
+    #mobile-nav {
+        display: block;
+    }
+
+    #desktop-nav {
+        display: none;
+    }
 
 #overlay-menu-container {
 
@@ -38,8 +76,8 @@ button {
 
 #overlay-menu {
     background-color: #D7E5E3;
-    width:50%;
-    margin: 150px auto;
+    width:80%;
+    margin: 90px auto;
     border-radius: 20px;
     position: relative;
     text-align: center;
@@ -72,6 +110,14 @@ button {
    color:#07656E;
 }
 
+main {
+    width: 80%; 
+    margin: auto;
+    background-color: #D7E5E3;
+}
+
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -81,10 +127,7 @@ header {
     color: white;
 }
 
-main {
-    margin: 50px 25%;
-    background-color: #D7E5E3;
-}
+
 
 #menu-button {
     color: white;
