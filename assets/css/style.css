@@ -6,7 +6,6 @@ body {
     margin: 0;
     background-color: #D7E5E3;
     color: #0C646F;
-    line-height: 185%;
 }
 
 main {
@@ -14,108 +13,9 @@ main {
     margin: auto;
     background-color: #D7E5E3;
 }
-
-button {
-    font-family: 'Poppins', sans-serif ;
-    font-size: 18px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.logo {
-    font-size: 24px;
-}
-
 menu li {
 
     list-style:none;
-}
-
-#desktop-nav menu {
-    display: flex;
-    gap: 40px;
-
-}
-
-
-#desktop-nav menu a {
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-#mobile-nav {
-    display: none;
-}
-
-@media (max-width: 900px) {
-
-    #mobile-nav {
-        display: block;
-    }
-
-    #desktop-nav {
-        display: none;
-    }
-
-#overlay-menu-container {
-
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 100;
-    background-color: rgba(0,0,0,.5);
-    display: none;
-
-   
-
-}
-
-#overlay-menu {
-    background-color: #D7E5E3;
-    width:80%;
-    margin: 90px auto;
-    border-radius: 20px;
-    position: relative;
-    text-align: center;
-   
-    
-
-   
-}
-
-#close-menu {
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    color: #0C646F;
-}
-
-#overlay-menu menu {
-    width: 50%;
-    margin: auto;
-    padding: 50px;
-}
-
-#overlay-menu menu li {
-    list-style: none;
-    margin: 20px;
-}
-
-#overlay-menu menu li a{
-   font-size: 24px;
-   color:#07656E;
-}
-
-main {
-    width: 80%; 
-    margin: auto;
-    background-color: #D7E5E3;
-}
-
 }
 
 header {
@@ -127,10 +27,38 @@ header {
     color: white;
 }
 
-
-
-#menu-button {
+header menu a {
     color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+header menu a.active-page {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#desktop-nav menu {
+    display: flex;
+    gap: 40px;
+
+}
+
+
+
+.logo {
+    font-size: 24px;
+}
+
+
+/* FAQ section */
+
+button {
+    font-family: 'Poppins', sans-serif ;
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .faq-question {
@@ -148,7 +76,7 @@ position: relative;
 }
 
 .faq-question button.closed::after {
-    content: '\002B';
+    content: '+';
     position: absolute;
     right: 0px;
     color:#07656E;
@@ -156,7 +84,23 @@ position: relative;
 }
 
 .faq-question button.open::after {
-    content: '\2212';
+    content: '-';
+    position: absolute;
+    right: 0px;
+    color:#07656E;
+    font-size: 30px;
+}
+
+.faq-question button.closed::after {
+    content: '+';
+    position: absolute;
+    right: 0px;
+    color:#07656E;
+    font-size: 30px;
+}
+
+.faq-question button.open::after {
+    content: '-';
     position: absolute;
     right: 0px;
     color:#07656E;
@@ -165,4 +109,106 @@ position: relative;
 
 .faq-question p {
     display: none;
+} 
+
+
+#overlay-menu-container {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0,0,0,.5);
+    display: none;
+ 
+
+   
+
 }
+
+#overlay-menu {
+    background-color: #07656E;
+    width:80%;
+    margin: 90px auto;
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+    padding: 50px;
+   
+   
+    }
+
+    #overlay-menu li a {
+        font-size: 28px;
+        margin-block: 10px;
+        display: inline-block;
+    }
+
+    #close-menu {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        color: white;
+    }
+
+    #mobile-nav {
+        display: none;
+    }
+
+    @media (max-width: 900px) {
+
+        #mobile-nav {
+            display: block;
+        }
+        
+        #menu-button {
+            color: white;
+        }
+        
+        
+        #desktop-nav {
+            display: none;
+        }
+
+        main {
+            width: 90%;
+        }
+
+    }
+
+/* 
+
+
+
+
+
+
+
+#mobile-nav {
+    display: none;
+}
+
+@media (max-width: 900px) {
+
+    #mobile-nav {
+        display: block;
+    }
+
+    #desktop-nav {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+#menu-button {
+    color: white;
+}
+
