@@ -14,3 +14,86 @@ main {
     background-color: #D7E5E3;
 }
 
+header {
+    display: flex;
+    padding: 20px 10%;
+    justify-content: space-between;
+    background-color:darkcyan;
+    align-items: center;
+}
+
+header menu li {
+    list-style: none;
+}
+
+header span {
+    color: white;
+    font-size: 28px;
+}
+header menu li a {
+    color:white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color .5s;
+}
+header menu li a:hover {
+    color: #D7E5E3;
+}
+
+header #desktop-nav menu {
+    display: flex;
+    gap: 40px;
+}
+header .active-page {
+    text-decoration: underline;
+}
+
+main button {
+    background-color: transparent;
+    border: none;
+    color: #0C646F;
+    font-family: "Poppins";
+    font-size: 20px;
+    padding-block: 20px;
+    border-bottom:2px solid #0C646F ;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+main button.closed::after {
+    content: '+';
+    position: absolute ;
+    right: 0px;
+    font-size: 40px;
+    color:#0C646F
+}
+main button.open::after {
+    content: '-';
+    position: absolute ;
+    right: 0px;
+    font-size: 40px;
+    color:#0C646F;
+}
+
+.faq-question p {
+    display: none;
+}
+
+/* mobile menu  */
+#mobile-nav button {
+    background-color: transparent;
+    border:0;
+}
+#overlay-menu-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: 100;
+}
+#overlay-menu {
+    background-color: #0C646F;
+    width: 80%;
+}
